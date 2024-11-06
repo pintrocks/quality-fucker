@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Quality Degrader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>quality fucker</h1>
+    
+    <div id="upload-container">
+      <label class="custom-file-upload">
+        <input type="file" id="image-upload" accept="image/*">
+        Browse
+      </label>
+    </div>
+
+    <div id="image-wrapper">
+      <img id="uploaded-image" src="" alt="Uploaded Image">
+    </div>
+
+    <!-- Range Slider for Quality Adjustment with Download Button -->
+    <div class="slider-container">
+      <label for="quality-slider">Quality:</label>
+      <input type="range" id="quality-slider" min="1" max="100" value="20">
+      <a id="download-link" href="#" download="degraded-image.jpg" title="Download Image">⬇️</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
